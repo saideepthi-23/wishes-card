@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By using DOM</title>
+</head>
+
+<body>
+    <script>
+        let divbg=document.createElement("div");
+        document.body.appendChild(divbg);
+        divbg.style.background="radial-gradient(circle,lightblue 62%,blue)";
+        divbg.style.height="100%";
+        divbg.style.display="flex"
+        divbg.style.flexDirection="column"
+        divbg.style.alignItems="center"
+        divbg.style.paddingTop="4.5rem"
+
+        let divtxt=document.createElement("h1")
+        divbg.appendChild(divtxt)
+        divtxt.innerHTML="<b><i>Happy Ganesh Chaturthi<i></b>"
+        divtxt.style.fontSize="2.5rem"
+        let img1=document.createElement("img");
+        img1.setAttribute("src","../Assets/Images/vinayak.jpg");
+        img1.style.height="200px"
+        img1.style.width="200px"
+        img1.style.borderRadius="20px 40px"
+        divbg.appendChild(img1)
+        let para=document.createElement("p")
+        divbg.appendChild(para)
+        para.innerHTML="<i><b>May Lord Ganesha bless you and your family with good fortune,wisdom,health and prosperity</i></b>"
+        para.style.fontSize="1.5rem"
+        para.style.padding="3rem"
+        para.style.textAlign="center"
+    </script>
+
+</body>
+
+</html>
